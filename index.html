@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script defer src="bundle.js"></script>
+    <title>Card Generator</title>
+  </head>
+  <body>
+    <header class="text-center">
+      <h1>Card Generator</h1>
+    </header>
+    <main class="container">
+      <form id="card-form">
+        <label for="greeting">Enter greeting:</label>
+        <input
+          type="text"
+          name="greeting"
+          id="greeting"
+          placeholder="Enter greeting"
+        />
+        <label for="eventType">Enter event type:</label>
+        <select name="eventType" id="eventType" multiple>
+          <option value="birthday">Birthday</option>
+          <option value="wedding">Wedding</option>
+          <option value="graduation">Graduation</option>
+        </select>
+        <label for="message">Enter message:</label>
+        <input
+          type="textarea"
+          name="message"
+          id="message"
+          placeholder="Enter message"
+        />
+        <input type="submit" id="submit" value="Submit!" />
+      </form>
+    </main>
+    <footer class="text-center">
+      <p>Copyright</p>
+    </footer>
+  </body>
+</html>
